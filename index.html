@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Configure your M6</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./app.css">
+	
+</head>
+<body>
+	<!-- Fixed Top Nav -->
+	<div class="fixed-top-nav">
+		<p class="fixed-navbar">
+			0% APR Available for qualified buyers <a href="Learn More"></a>
+		</p>
+	</div>  
+<div class="container">
+	<!-- Logo Header -->
+	<header class="header">
+		<nav>
+			<img src="./images/logo.svg" alt="Logo" >
+		</nav>
+		<i class="fas fa-globe"></i>
+	</header>
+
+	<!-- Main -->
+	<main class="main-content">
+		<aside class="left-aside">
+			<img src="./images/model-y-solid-black.jpg" alt="" id="exterior-img" class="img car-img">
+			<img src="./images/model-y-interior-dark.jpg" alt="" id="interior-img" class="img car-interior">
+		</aside >
+		<!-- Description  -->
+		<aside class="right">
+			<div class="desc">
+				<h2>Model Y</h2>
+				<p class="light-out">Customize Your Car</p>
+			</div>
+
+		<!-- Exterior Color Section -->
+		<div class="exterior color-sec">
+			<p class="desc-txt">Exterior Color</p>
+			<div class="pallete" id="exterior-btn">
+				
+				<img src="./images/button-quicksilver.avif" alt="quicksilver"  class="color light">
+
+				<img src="./images/button-deep-blue.avif" alt="deep-blue"  class="color deep-blue">
+				
+				<img src="./images/button-pearl-white.avif" alt="pearl-white"  class="color pearl-white">
+
+				<img src="./images/button-stealth-grey.avif" alt="stealth-grey"  class="color grey">
+				
+				<img src="./images/button-ultra-red.avif" alt="ultra-red"  class="color dark">
+
+				<img src="./images/button-solid-black.avif" alt="solid-black"  class="color black">
+
+			</div>
+		</div>
+
+		 <div class="interior color-sec">
+			<p class="desc-txt">Interior Color</p>
+			<div id="interior-btn" >
+				<img src="./images/button-dark.avif" alt="dark"   class="inte light" >
+				<img src="./images/button-light.avif" alt="light"  class="inte deep-blue" >
+			</div>
+		 </div>
+
+		 <!-- Wheels Section -->
+		<div class="sec wheels-section">
+			<p class="desc-txt" style="margin-bottom: 0.5rem;">Wheels</p>
+			
+			<div class="btn-con">
+				<button id="standard" class=" wheels-txt active">Standard Wheels</button>
+				<button id="performance" class=" wheels-txt ">Performance Wheels (+2500)</button>
+			</div>
+ 
+			<div class="self-driving-sec">
+				<p class="desc-txt">Full Self-Driving </p>
+				<span>
+					<input type="checkbox">
+					<p class="p light-out">
+						Add Full Self-driving for $8500
+					</p>
+				</span>
+			</div>
+		 </div>
+
+		 <div class="sec performance-section">
+			<p class="desc-txt" style="margin-bottom: 0.5rem; " id = "performance-package">Peformance Package</p>
+			
+			<div class="btn-con">
+				<button class="btn desc-txt" style="transition: all 0.4s ease-in-out ;">Performnce upgrade ( 5000 )</button>
+			</div>
+		</div>		
+
+		<div class="sec performance-section">
+			<p class="desc-txt" style="margin-bottom: 0,5rem;">Accessories </p>
+			
+			<div class="btn-con acc">
+				<span>
+					<p class="p light-out">
+						Center console Trays
+					</p>
+					<label for="" id="console-trays">
+						<input type="checkbox">
+						<small>$43</small>
+					</label>
+				</span>
+
+				<span>
+					<p class="p light-out">
+						Sunshade
+					</p>
+
+					<label for="" id="Sunshade">
+						<input type="checkbox">
+						<small>$56</small>
+					</label>
+				</span>
+
+				<span>
+					<p class="p light-out">
+						All weather interior lens
+					</p>
+
+					<label for="" id="InteriorLens">
+						<input type="checkbox">
+						<small>$35</small>
+					</label>
+				</span>
+			</div>
+		</div>	
+		
+		<div class="cost-sec">
+			<h4 class="desc-txt">Total Price</h3>
+			<h4 id="Price">
+				$45000
+			</h2>
+		</div>
+
+		<div class="payment-plan">
+			<p class="desc-txt">
+				Estimated Payment Breakdown
+			</p>
+			<span class="down-pay">Down Paymment :<b>$23,333</b></span>
+			<span class="down-pay">Loan Term:<b>60 months</b></span>
+			<span class="down-pay">Interest rate :<b>3% APR</b></span>
+			<span class="down-pay">Estimated Monthly Paymment :<b>$843.5</b></span>
+		</div>
+	</aside>
+</main>
+</div>
+	 <script src="app.js"></script>
+</body>
+</html>

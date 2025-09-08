@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    /* Top fixed div */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: white;
+      padding: 20px;
+      z-index: 1000;
+
+      /* 👇 subtle floating shadow */
+     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    /* Content behind */
+    .content {
+      margin-top: 100px; /* so content starts below header */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Floating Header with Shadow</h2>
+  </div>
+
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scroll down…</p>
+    <p style="margin-top:1000px;">Bottom of page</p>
+  </div>
+
+</body>
+</html>
